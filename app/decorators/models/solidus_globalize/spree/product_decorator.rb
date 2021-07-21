@@ -24,7 +24,7 @@ module SolidusGlobalize
           translation_class.class_eval do
             if defined?(Paranoia)
               acts_as_paranoid
-              include ::Spree::ParanoiaDeprecations
+              # include ::Spree::ParanoiaDeprecations
             end
 
             include Discard::Model
